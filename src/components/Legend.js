@@ -7,7 +7,7 @@ export default class Legend extends Component {
        
         return (
             
-                <div class="grid grid-cols-6 p-3">
+                <div class="grid lg:grid-cols-6 sm:grid-cols-2 p-3">
                     
                         {this.props.legendItems.map((item, index)=>(
                                 <div key={index} className="h-12 rounded-md flex items-center justify-center text-2xl font-bold" style={{backgroundColor: item.color, color: item.textColor}}>
