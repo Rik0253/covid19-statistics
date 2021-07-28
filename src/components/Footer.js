@@ -33,8 +33,7 @@ export default class Footer extends Component {
               </a>
               
               <a
-                href="https://github.com/Rik0253"
-                target="_blank"
+                href="https://github.com/Rik0253"                
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-violet-600 text-coolGray-50"
               >
                 <svg
