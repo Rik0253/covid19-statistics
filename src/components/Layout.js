@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {format} from "date-fns";
 
 export default class Layout extends Component {
     render() {
@@ -12,7 +13,16 @@ export default class Layout extends Component {
                         :
                         ''
                     }  {this.props.data.text}
-                    </p>
+                </p>
+                {
+                    (this.props.data.time)?
+                      <p className="text-sm text-center p-2 justify-items-center">(Updated at: {format(
+                        new Date(this.props.data.time),
+                        "MMM dd yyyy H:m a"
+                      )})</p>
+                      :''
+                }
+
             </div>           
                            
         )

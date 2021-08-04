@@ -25,7 +25,7 @@ function Home() {
         </div>
       ) : (
         <div>
-          <Layout data={{img: null, text: 'Covid-19 Statistics'}}/>
+          <Layout data={{img: null, text: 'Covid-19 Statistics', time: null}}/>
           <WorldMap countries={countries} />
           <Legend legendItems={legendItemsReverse} />
         </div>
